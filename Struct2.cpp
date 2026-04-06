@@ -3,14 +3,14 @@ using namespace std;
 
 struct alamatDetail
 {
-    string desa
+    string desa;
     string kota;
 };
 
 struct mahasiswa 
 {
     string nama;
-    alamatDetail detailAlamat
+    alamatDetail detailAlamat;
     int umur;
 };
 
