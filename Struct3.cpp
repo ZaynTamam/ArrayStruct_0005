@@ -8,3 +8,30 @@ struct alamatDetail
     string kota;
 };
 
+struct mahasiswa 
+{
+    string nama;
+    alamatDetail detailAlamat;
+    int umur;
+};
+
+int main()
+{
+    // deklarasi variable struct
+    mahasiswa mhs;
+    // mengisi data
+    cout << "Isikan data nama : ";
+    getline(cin, mhs.nama);
+    cout << "Isikan data desa : ";
+    getline(cin, mhs.detailAlamat.desa);
+    cout << "Isikan data kota : ";
+    getline(cin, mhs.detailAlamat.kota);
+    cout << "Isikan data usia : ";
+    cin >> mhs.umur;
+
+    cout << "Data Mahasiswa : " << endl;
+    cout << "Nama : " << mhs.nama << endl;
+    cout << "Desa : " << mhs.detailAlamat.desa << endl;
+    cout << "Kota : " << mhs.detailAlamat.kota << endl;
+    cout << "Usia : " << mhs.umur << endl;
+}
